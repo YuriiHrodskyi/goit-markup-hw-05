@@ -724,6 +724,15 @@ left: 0;
 display: flex;
 justify-content: center;
 align-items: center;
+
+opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease-in-out;
+}
+
+.backdrop.is-open {
+opacity: 1;
+    pointer-events: auto;
 }
 
 .popup-contacts {
