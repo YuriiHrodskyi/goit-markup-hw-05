@@ -665,7 +665,7 @@ border: 1px solid #fff;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
     color: #fff;
-    padding: 8px;
+    padding-left: 16px;
     font-weight: 400;
         font-size: 12px;
         line-height: 2;
@@ -799,6 +799,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 .close-popup:focus {
     background-color: #404BBF;
 fill: #fff;
+border: none;
 
 }
 
