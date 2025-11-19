@@ -52,7 +52,7 @@ margin-left: auto;
 margin-right: auto;
 }
 
-.visualy-hidden {
+.visually-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
