@@ -423,6 +423,7 @@
       <!-- #endregion our portfolio -->
     </main>
     <!-- #region footer -->
+
     <footer class="section-footer">
       <div class="container">
         <div class="footer-information-container">
@@ -467,27 +468,32 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-          <label class="label-form"
-            ><p class="title-form">Subscribe</p>
-            <input
-              class="input-email"
-              type="email"
-              name="user_email"
-              placeholder="E-mail"
-            />
-          </label>
-          <button class="button-footer" type="submit">
-            <p class="button-text">Subscribe</p>
-            <svg class="socials-icon-footer" width="24" height="24">
-              <use href="./images/icons.svg#icon-telegram"></use>
-            </svg>
-          </button>
-        </form>
+        <div class="footer-form-wraper">
+          <p class="title-form">Subscribe</p>
+          <form class="footer-form">
+            <label class="label-form">
+              <input
+                class="input-email"
+                type="email"
+                name="user_email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="button-footer" type="submit">
+              Subscribe
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- #endregion footer -->
-    <div class="backdrop">
+
+    <!-- #region backdrop -->
+
+    <div class="backdrop is-open">
       <div class="popup-contacts">
         <button class="close-popup" type="button">
           <svg class="close-popup-icon" width="8" height="8">
@@ -497,15 +503,15 @@
         <p class="popup-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="form-field-wrapper">
-            <label for="username" class="modal-label">Name </label>
+            <label for="user-name" class="modal-label">Name </label>
             <div class="field-wrapper">
               <input
                 class="text-field"
                 type="text"
-                id="username"
-                name="username"
+                id="user-name"
+                name="user-name"
               />
-              <svg class="field-icon" width="18" height="18">
+              <svg class="field-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
@@ -520,7 +526,7 @@
                 id="usertel"
                 name="usertel"
               />
-              <svg class="field-icon" width="18" height="18">
+              <svg class="field-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
@@ -535,31 +541,32 @@
                 id="useremail"
                 name="useremail"
               />
-              <svg class="field-icon" width="18" height="18">
+              <svg class="field-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-field-wrapper">
-            <label class="modal-label" for="coment">Comment </label>
+          <div class="form-field-wrapper-coment">
+            <label class="modal-label" for="user-comment">Comment </label>
             <textarea
               class="comment-textarea"
-              id="coment"
-              name="coment"
+              id="user-comment"
+              name="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
 
-          <div class="form-field-wrapper">
+          <div class="form-field-wrapper-policy">
             <input
               class="policy-checkbox visualy-hidden"
               type="checkbox"
-              id="policy"
-              name="policy"
+              id="user-privacy"
+              name="user-privacy"
               value="true"
+              visually-hidden
             />
-            <label for="policy" class="policy-text">
+            <label for="user-privacy" class="policy-text">
               <span class="castom-checkbox">
                 <svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check-mark"></use>
@@ -573,5 +580,7 @@
         </form>
       </div>
     </div>
+
+    <!-- #endregion backdrop -->
   </body>
 </html>
